@@ -11,10 +11,11 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: 'JXXOJ', link: 'https://oj.jxx.asia' },
-      { text: '打字游戏', link: 'https://typegame.jxx.asia' },
-      { text: '鲸小小', link: 'https://jxx.asia' },
-      { text: 'GitHub', link: 'https://github.com/lzdogbro' },
+      { text: '关于我', link: '/about' },
+      { text: '业余无线电', link: '/radio' },
+      { text: '靖远味道', link: '/food' },
+      { text: 'JXXOJ', link: '/jxxoj' },
+      { text: '打字游戏', link: '/typegame' },
     ],
 
     socialLinks: [
