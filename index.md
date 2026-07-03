@@ -3,9 +3,10 @@
 layout: home
 
 hero:
-  name: "BG9JOI / lzdogbro"
-  text: "独立全栈开发工程师 · 少儿编程教师 · 业余无线电爱好者"
-  tagline: 代码 · 电波 · 家乡味道
+  name: "兰州狗哥的主页"
+  text: "独立全栈开发工程师"
+  text: "少儿编程教师"
+  text: "业余无线电爱好者"
   actions:
     - theme: brand
       text: GitHub
