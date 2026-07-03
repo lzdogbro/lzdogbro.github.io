@@ -7,6 +7,7 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', href: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">📻</text></svg>' }],
+    ['script', {}, `(function(){var h=new Date().getHours();document.documentElement.classList.toggle('dark',h<6||h>=18);var D='sun-theme-date',T='vitepress-theme-appearance',t=new Date().toDateString();if(localStorage.getItem(D)!==t){fetch('https://ipapi.co/json/').then(function(r){return r.json()}).then(function(g){return fetch('https://api.sunrise-sunset.org/json?lat='+g.latitude+'&lng='+g.longitude+'&formatted=0').then(function(r){return r.json()})}).then(function(s){var n=new Date(),r=new Date(s.results.sunrise),u=new Date(s.results.sunset),d=n<r||n>u;document.documentElement.classList.toggle('dark',d);localStorage.setItem(T,d?'dark':'light');localStorage.setItem(D,t)}).catch(function(){localStorage.setItem(T,h<6||h>=18?'dark':'light');localStorage.setItem(D,t)})}})();`],
   ],
 
   themeConfig: {
