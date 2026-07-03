@@ -25,5 +25,5 @@ features:
   - title: "⌨️ 鲸小小打字游戏"
     details: 为孩子们设计的打字练习小工具，让学打字变得有趣。访问 <a href="https://typegame.jxx.asia">typegame.jxx.asia</a> 来试试手速吧。
   - title: "🔗 项目链接"
-    details: OJ 刷题 → <a href="https://oj.jxx.asia">oj.jxx.asia</a>　|　打字游戏 → <a href="https://typegame.jxx.asia">typegame.jxx.asia</a>　|　鲸小小主页 → <a href="https://jxx.asia">jxx.asia</a>　|　开源代码 → <a href="https://github.com/lzdogbro/JXXOJ">JXXOJ</a>
+    details: <a href="https://oj.jxx.asia">🏫 JXXOJ 在线判题系统</a><br><a href="https://typegame.jxx.asia">⌨️ 鲸小小打字游戏</a><br><a href="https://jxx.asia">🐳 鲸小小主页</a><br><a href="https://github.com/lzdogbro/JXXOJ">📦 JXXOJ 开源代码</a>
 ---
