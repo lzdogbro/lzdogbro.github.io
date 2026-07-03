@@ -13,7 +13,7 @@ export default defineConfig({
     nav: [
       { text: '关于我', link: '/about' },
       { text: '业余无线电', link: '/radio' },
-      { text: '靖远味道', link: '/food' },
+      { text: '关于乡愁', link: '/food' },
       { text: 'JXXOJ', link: '/jxxoj' },
       { text: '打字游戏', link: '/typegame' },
     ],
