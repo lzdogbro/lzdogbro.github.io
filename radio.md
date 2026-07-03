@@ -18,30 +18,6 @@
 
 ## 通联日志
 
-> 日志数据来自 [QRZ Logbook](https://logbook.qrz.com/lbstat/BG9JOI/)，实时更新。
-
-### 数据概览
-
-| 项目 | 内容 |
-|------|------|
-| **总 QSO 数** | 77+ |
-| **主要模式** | FT8 |
-| **常用波段** | 15M · 7M · 5M |
-| **已通联国家/地区** | 🇨🇳 中国 · 🇯🇵 日本 · 🇮🇩 印度尼西亚 · 🇷🇺 俄罗斯 · 🇹🇭 泰国 |
-
-### 最近通联
-
-| 日期 | 呼号 | 波段 | 模式 | 国家 | OP |
-|------|------|------|------|------|-----|
-| 2026-05-13 | YB7PAO | 15M | FT8 | 🇮🇩 印度尼西亚 | YOS ANDY TANGKASIANG |
-| 2026-05-13 | JH7MKB | 15M | FT8 | 🇯🇵 日本 | Kazuyuki Tsushima |
-| 2026-05-13 | JA8BSK | 15M | FT8 | 🇯🇵 日本 | コウジ ヨコノ |
-| 2026-05-13 | YC1JEL | 15M | FT8 | 🇮🇩 印度尼西亚 | Dede Sutisna |
-| 2026-05-13 | JF2SKV | 15M | FT8 | 🇯🇵 日本 | MAZSHITA HISASHI |
-| 2026-05-13 | JA7UKM | 15M | FT8 | 🇯🇵 日本 | — |
-
-## 在线日志
-
 <iframe 
   src="https://logbook.qrz.com/lbstat/BG9JOI/" 
   width="100%" 
@@ -51,4 +27,4 @@
   style="border: 1px solid var(--vp-c-bg-soft); border-radius: 8px;">
 </iframe>
 
-> 访问 [QRZ Logbook](https://logbook.qrz.com/lbstat/BG9JOI/) 查看完整通联记录。
+> 日志数据实时同步自 [QRZ Logbook](https://logbook.qrz.com/lbstat/BG9JOI/)。
