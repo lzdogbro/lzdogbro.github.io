@@ -20,8 +20,8 @@ features:
   - title: "📻 业余无线电"
     details: 白银市业余无线电协会会员，呼号 <strong>BG9JOI</strong> 。多次参与协会中继台维护。电波连通的不仅是信号，更是一群有趣的人。
     link: /radio
-  - title: "🍜 靖远味道"
-    details: 靖远的美食——酸烂肉、羊羔肉、东湾驴肉，配上一碗糁饭，香灵感了。
+  - title: "🍜 关于乡愁"
+    details: 靖远/平川的美食都非常硬，如同酸烂肉、羊羔肉、东湾驴肉，配上一碗糁饭，香灵感了。
     link: /food
   - title: "💻 JXXOJ 在线判题系统"
     details: 基于开源项目搭建的 OJ 网站，现已开放注册。代码开源在我的 <a href="https://github.com/lzdogbro/JXXOJ">GitHub 仓库</a> 中，欢迎来刷题、交流、贡献！
