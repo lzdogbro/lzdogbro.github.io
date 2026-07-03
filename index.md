@@ -4,9 +4,7 @@ layout: home
 
 hero:
   name: "兰州狗哥的主页"
-  text: "独立全栈开发工程师"
-  text: "少儿编程教师"
-  text: "业余无线电爱好者"
+  text: "独立全栈开发工程师<br>少儿编程教师<br>业余无线电爱好者"
   actions:
     - theme: brand
       text: GitHub
