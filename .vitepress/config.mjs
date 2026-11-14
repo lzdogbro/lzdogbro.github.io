@@ -94,12 +94,13 @@ const socialLinks = [{ icon: 'github', link: 'https://github.com/lzdogbro' }]
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'BG9JOI',
+  title: '兰州狗哥',
   description: 'lzdogbro 的个人主页 — 少儿编程教师 · 业余无线电爱好者',
 
   head,
 
   themeConfig: {
+    siteTitle: 'BG9JOI',
     nav: zhNav,
     socialLinks,
     footer,
@@ -115,6 +116,7 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       link: '/en/',
+      title: 'Dogbro',
       description: "lzdogbro's personal site — youth programming teacher · amateur radio enthusiast",
       themeConfig: { nav: enNav },
     },
@@ -122,6 +124,7 @@ export default defineConfig({
       label: '日本語',
       lang: 'ja-JP',
       link: '/ja/',
+      title: 'Dogbro',
       description: 'lzdogbro の個人サイト — 子ども向けプログラミング講師・アマチュア無線愛好家',
       themeConfig: { nav: jaNav },
     },
@@ -129,6 +132,7 @@ export default defineConfig({
       label: 'Français',
       lang: 'fr-FR',
       link: '/fr/',
+      title: 'Dogbro',
       description: 'Le site personnel de lzdogbro — professeur de programmation pour enfants · radioamateur',
       themeConfig: { nav: frNav },
     },
@@ -136,6 +140,7 @@ export default defineConfig({
       label: 'Русский',
       lang: 'ru-RU',
       link: '/ru/',
+      title: 'Dogbro',
       description: 'Личный сайт lzdogbro — преподаватель программирования для детей · радиолюбитель',
       themeConfig: { nav: ruNav },
     },
