@@ -101,6 +101,13 @@ export default defineConfig({
 
   themeConfig: {
     nav: zhNav,
+    notFound: {
+      code: '404',
+      title: '页面不存在',
+      quote: '你要找的页面可能已经被移动或删除，检查一下地址，或者回首页看看。',
+      linkText: '返回首页',
+      linkLabel: '返回首页',
+    },
     socialLinks,
     footer,
   },
@@ -117,7 +124,16 @@ export default defineConfig({
       link: '/en/',
       title: 'Dogbro',
       description: "lzdogbro's personal site — youth programming teacher · amateur radio enthusiast",
-      themeConfig: { nav: enNav },
+      themeConfig: {
+        nav: enNav,
+        notFound: {
+          code: '404',
+          title: 'PAGE NOT FOUND',
+          quote: "The page you're looking for doesn't exist or has been moved. Check the address, or head back home.",
+          linkText: 'Take me home',
+          linkLabel: 'Go to home',
+        },
+      },
     },
     ja: {
       label: '日本語',
@@ -125,7 +141,16 @@ export default defineConfig({
       link: '/ja/',
       title: 'Dogbro',
       description: 'lzdogbro の個人サイト — 子ども向けプログラミング講師・アマチュア無線愛好家',
-      themeConfig: { nav: jaNav },
+      themeConfig: {
+        nav: jaNav,
+        notFound: {
+          code: '404',
+          title: 'ページが見つかりません',
+          quote: 'お探しのページは存在しないか、移動された可能性があります。URL を確認するか、ホームへお戻りください。',
+          linkText: 'ホームに戻る',
+          linkLabel: 'ホームに戻る',
+        },
+      },
     },
     fr: {
       label: 'Français',
@@ -133,7 +158,16 @@ export default defineConfig({
       link: '/fr/',
       title: 'Dogbro',
       description: 'Le site personnel de lzdogbro — professeur de programmation pour enfants · radioamateur',
-      themeConfig: { nav: frNav },
+      themeConfig: {
+        nav: frNav,
+        notFound: {
+          code: '404',
+          title: 'PAGE INTROUVABLE',
+          quote: "La page que vous cherchez n'existe pas ou a été déplacée. Vérifiez l'adresse, ou revenez à l'accueil.",
+          linkText: "Retour à l'accueil",
+          linkLabel: "Aller à l'accueil",
+        },
+      },
     },
     ru: {
       label: 'Русский',
@@ -141,7 +175,16 @@ export default defineConfig({
       link: '/ru/',
       title: 'Dogbro',
       description: 'Личный сайт lzdogbro — преподаватель программирования для детей · радиолюбитель',
-      themeConfig: { nav: ruNav },
+      themeConfig: {
+        nav: ruNav,
+        notFound: {
+          code: '404',
+          title: 'СТРАНИЦА НЕ НАЙДЕНА',
+          quote: 'Страница, которую вы ищете, не существует или была перемещена. Проверьте адрес или вернитесь на главную.',
+          linkText: 'На главную',
+          linkLabel: 'На главную',
+        },
+      },
     },
   },
 })
