@@ -1,0 +1,125 @@
+/**
+ * 首页 feature 卡片的链接强调与悬停反馈。
+ * 默认主题的基础样式里有 `a { color: inherit; text-decoration: inherit }`，
+ * 卡片正文里的链接因此和正文同色、无下划线，这里统一接管。
+ */
+
+/* ---------- 正文内联链接：品牌色 + 常显细下划线 ---------- */
+.VPFeature .details a {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--vp-c-brand-1) 45%, transparent);
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease,
+    text-underline-offset 0.2s ease;
+}
+
+.VPFeature .details a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration-color: currentColor;
+  text-underline-offset: 2px;
+}
+
+/* ---------- 外链箭头（用 mask 上色，跟随链接颜色） ---------- */
+.VPFeature .details a[href^='http']::after {
+  content: '';
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-left: 0.18em;
+  vertical-align: baseline;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3.2 8.8 8.8 3.2M8.8 3.2H4.3M8.8 3.2V7.7' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3.2 8.8 8.8 3.2M8.8 3.2H4.3M8.8 3.2V7.7' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+  opacity: 0.8;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.VPFeature .details a[href^='http']:hover::after {
+  transform: translate(2px, -2px);
+  opacity: 1;
+}
+
+/* ---------- 卡片：浮起 + 品牌色描边 + 阴影 + 标题变色 ---------- */
+.VPFeature {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.VPFeature .title {
+  transition: color 0.25s ease;
+}
+
+.VPFeature:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .VPFeature:hover {
+    transform: translateY(-3px);
+    border-color: var(--vp-c-brand-1);
+    box-shadow: var(--vp-shadow-3);
+  }
+
+  .VPFeature:hover .title {
+    color: var(--vp-c-brand-1);
+  }
+}
+
+/* ---------- 尊重系统的「减少动态效果」 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .VPFeature,
+  .VPFeature .title,
+  .VPFeature .details a,
+  .VPFeature .details a[href^='http']::after {
+    transition: none;
+  }
+
+  .VPFeature:hover {
+    transform: none;
+  }
+
+  .VPFeature .details a[href^='http']:hover::after {
+    transform: none;
+  }
+}
+
+/* ---------- 非中文 hero：放开宽度 + 收敛字号与行数 ----------
+ * 默认主题把 .name 限宽 392px、.text 限宽 576px，英文名和长句会被强行折行；
+ * 本站 hero 没有配图，可以放宽到 720px / 900px，让每个身份各占一行。
+ * 中文版保持默认字号（56px）不动。
+ */
+@media (min-width: 768px) {
+  html:not([lang^='zh']) .VPHero {
+    padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 56px);
+    padding-bottom: 40px;
+  }
+
+  html:not([lang^='zh']) .VPHero .name {
+    max-width: 720px;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  html:not([lang^='zh']) .VPHero .text {
+    max-width: 900px;
+    font-size: 40px;
+    line-height: 1.16;
+    text-wrap: balance;
+  }
+
+  html:not([lang^='zh']) .VPHero .actions {
+    padding-top: 24px;
+  }
+}
