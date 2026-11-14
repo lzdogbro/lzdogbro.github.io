@@ -100,7 +100,6 @@ export default defineConfig({
   head,
 
   themeConfig: {
-    siteTitle: 'BG9JOI',
     nav: zhNav,
     socialLinks,
     footer,
