@@ -4,7 +4,9 @@
   "description": "lzdogbro's personal site",
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev",
+    "dev": "zsh scripts/dev-with-pull.sh",
+    "dev:vite": "vitepress dev",
+    "pull": "zsh scripts/auto-pull.sh --once",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
